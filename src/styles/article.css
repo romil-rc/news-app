@@ -1,0 +1,245 @@
+#picon {
+    width: 100px;
+    height: 100px;
+}
+
+.font-change{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#article-heading{
+    margin-bottom: 20px;
+}
+.profile{
+    display: inline-block;
+}
+#profile-name{
+    font-weight: bold;
+    margin-left: 15px;
+}
+#pro-line{
+    font-size: small;
+    transform: translate(45%, -180%);
+}
+.brand-icon{
+    opacity: 0.2;
+    width: 20px;
+    margin: 3px;
+    float: right;
+    transform: translate(1500%, -440%);
+}
+/* #pfb{
+    float: right;
+    width: 20px;
+    transform: translate(0%, 0%);
+} */
+.article img{
+    border-radius: 0px;
+}
+.article p{
+    font-size: 17px;
+}
+.badge{
+    margin: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    opacity: 0.3;
+    border-radius: 0px;
+    color: black;
+    font-size: 13px;
+}
+.claps{
+    margin-top: 20px;
+    width: 30px;
+}
+#clap-text{
+    margin-left: 7px;
+    opacity: 0.6;
+    font-weight: 600;
+    font-size: small;
+    vertical-align: -7px;
+}
+#pbicon{
+    height: 80px;
+    width: 80px;
+}
+#b-profile-name{
+    font-weight: bold;
+    margin-left: 15px;
+}
+#b-pro-line-b{
+    opacity: 0.5;
+    font-size: small;
+    transform: translate(40%, -100%);
+}
+#b-pro-line-t{
+    opacity: 0.5;
+    font-size: small;
+    transform: translate(40%, -600%);
+}
+#bp{
+    margin-top: -50px;
+}
+.left-container{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50%;
+}
+.left-claps{
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 30px;
+    width: 30px;
+}
+.left-text{
+    margin-left: 25px;
+    opacity: 0.6;
+    font-weight: 600;
+    font-size: small;
+    vertical-align: -7px;
+}
+#bottom-section{
+    background-color: #fafafa;
+    margin: 0px;
+    /* justify-content: space-evenly; */
+}
+.second{
+    padding-left: 63px;
+}
+.second hr{
+    margin-bottom: 0px;
+}
+.bsc{
+    right: -12%;
+    width: 80%;
+}
+.bscb{
+    
+    background-color: #fafafa;
+}
+#title-below{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    width: fit-content;
+    justify-content: start;
+}
+.card-title{
+    font-weight: bold;
+}
+.s2picon{
+    width: 75px;
+    height: 75px;
+}
+.profile-name-s2{
+    font-weight: bold;
+    margin-left: 15px;
+}
+.pro-line-s2{
+    margin: 0px;
+    margin-left: 15px;
+    width: fit-content;
+    font-size: small;
+    transform: translate(60%, -120%);
+}
+#main-hidden{
+    display: none;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body{
+        margin: 0px;
+    }
+    #article-heading{
+        margin-top: 30%;
+        font-size: 24px;
+    }
+    #pfb, #pt, #pi, #pyt{
+        position: relative;
+        transform: translate(-780%, -650%);
+    }
+    /* #pt{
+        position: relative;
+        transform: translate(-780%, -650%);
+    }
+    #pi{
+        position: relative;
+        transform: translate(-780%, -650%);
+    }
+    #pyt{
+        position: relative;
+        transform: translate(-780%, -650%);
+    } */
+    
+    .col-md-6{
+        /* position: relative; */
+        width: 100%;
+        margin-top: -220px;
+    }
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+        /* margin-right: 5px; */
+    }
+    .col-md-3{
+        visibility: hidden;
+    }
+    #picon{
+        position: relative;
+        transform: translateY(35px);
+    }
+    #profile-name{
+        position: relative;
+        
+    }
+    #pro-line{
+        position: relative;
+        transform: translateX(115px);
+        font-size: 15px;
+    }
+    #bpara, #sline{
+        position: relative;
+        font-size: 21px;
+        line-height: 25px;
+    }
+    #bp, #bottom-section{
+        /* visibility: hidden; */
+        display: none;
+    }
+    #ppro{
+        position: relative;
+    }
+    #main-hidden{
+        position: relative;
+        display: contents;
+    }
+    #ptb{
+        margin-top: -60px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .pstitl{
+        display: inline-block;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .psp{
+        font-size: 20px;
+    }
+    .pstdiv{
+        width: 70%;
+        display: inline-block;
+    }
+    .psidiv{
+        position: relative;
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .pspic{
+        border-radius: 5px;
+    }
+}

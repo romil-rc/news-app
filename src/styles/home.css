@@ -1,0 +1,261 @@
+/* Web  */
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    margin-top: 40px;
+}
+
+img {
+    height: 50%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+img#boreal {
+    height: inherit;
+}
+
+.center {
+    position: absolute;
+    /* top: 5%; */
+    /* left: 50%; */
+    transform: translate(10%, -200%);
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center p {
+    opacity: 0.57;
+}
+
+.small {
+    position: absolute;
+    transform: translate(8%, -140%);
+}
+
+.small h2{
+    font-size: 20px;
+}
+
+.card-img-top{
+    border-radius: 3px 3px 0px 0px;
+}
+
+.hr{
+    margin: 0px;
+    color: red;
+    margin-left: 10px;
+    width: 100px;
+    border: 1px solid red;
+    border-radius: 1px;
+    opacity: 0.8;
+    height: fit-content;
+}
+#tslss{
+    margin-bottom: 30px;
+}
+#tslss .hr{
+    margin-left: 0px;
+}
+.img-fluid {
+    height: 100%;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+.left-card{
+    width: 100%;
+    border-top: 1px solid #dcdcdc;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: hidden;
+    border-radius: 0;
+    padding-top: 15px;
+}
+#advertisement{
+    border: 1px solid  #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 108vh;
+}
+.down-arrow {
+    height: 40px;
+    width: 45px;
+    margin-left: 25px;
+}
+#load-more{
+    font-size: large;
+    opacity: 0.8;
+}
+.right-card {
+    border: hidden;
+    padding: 0;
+    margin: 0;
+    height: 120px;
+    font-size: 10px;
+    border-radius: 0px;
+    border-top: 1px solid #dcdcdc;
+}
+.right-card .card-title {
+    font-size: 15px;
+    transform: translate(-12%, 8%);
+    font-weight: bold;
+}
+.right-small{
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+.really-small {
+    font-size: 12px;
+    transform: translate(-12%, 8%);
+}
+.bottom{
+    transform: translate(55%, -300%);
+    /* transform: none; */
+    /* justify-content: center;
+    align-items: center; */
+}
+#castle {
+    height: 480px;
+}
+.card-group .card{
+    border: 0px;
+}
+#middle-card{
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+}
+.right-arrow{
+    height: 20px;
+    width: 50px;
+    margin-left: 10px;
+}
+#phlmra{
+    display: none;
+}
+#phtpn1{
+    text-align: right;
+    opacity: 0.2;
+    padding-top: 20%;
+}
+.phtpns{
+    text-align: right; 
+    opacity: 0.2; 
+    padding-top: 180%;
+}
+.mtlb{
+    color: black;
+    text-decoration: none;
+}
+
+/* Mobile  */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    [class*="col-"] {
+        width: 100%;
+        /* padding: 0; */
+    }
+    img#boreal{
+        position: relative;
+        /* padding-left: 0; */
+        margin-left: -20px;
+        height: 450px;
+        width: 412px;
+    }
+    #top-left{
+        display: none;
+    }
+    .left-card{
+        position: relative;
+        margin-top: 200px;
+    }
+    .phlai{
+        position: relative;
+        width: 50%;
+        height: 90%;
+    }
+    .phlacb{
+        position: relative;
+        width: 57%;
+        float: right;
+    }
+    .phlap, .rbr{
+        display: none;    
+    }
+    #phrc{
+        display: none;
+    }
+    #phlabbr{
+        border: 0px;
+    }
+    #phlmda{
+        display: none;
+    }
+    #phlmra{
+        display: block;
+    }
+    #load-more{
+        position: relative;
+        margin-left: 20px;
+        font-size: 21px;
+    }
+    #ph2bi{
+        display: none;
+    }
+    #advertisement{
+        display: none;
+    }
+    #phtp1i{
+        position: relative;
+    }
+    #phtp1h5{
+        margin-top: 10px;
+        position: relative;
+        font-weight: bold;
+    }
+    .phtprem-card{
+        display: none;
+    }
+    .phtprc{
+        position: relative;
+        margin-top: 0px;
+        padding-top: 10px;
+        display: inline-block;
+    }
+    .right-small{
+        position: relative;
+        width: 50%;
+        max-height: 65%;
+        top: 100%;
+    }
+    .phtpcb{
+        float: right;
+        padding-right: 0%;
+        /* display: inline-block; */
+        width: 55%;
+    }
+    .phtpmh{
+        margin-left: 12px;
+        margin-bottom: 20px;
+    }
+    .phtpsp{
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    .phtpns{
+        display: none;
+    }
+    #phtpn1{
+        display: none;
+    }
+    #middle-card{
+        border-left: 0px;
+        border-right: 0px;
+    }
+    #phlsknc{
+        display: none;
+    }
+}

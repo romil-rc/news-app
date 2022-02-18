@@ -1,0 +1,166 @@
+{
+    "foodBig": [
+        {
+            "cardClass": "card big-left-card show-card",
+            "cardId": "",
+            "id": 1,
+            "img": "https://i.pinimg.com/originals/5a/f6/41/5af64150a1be47475b70af8586e715ec.jpg",
+            "imgClass": "img-fluid rounded-start pimg",
+            "cardBodyClass": "card-body pcardb",
+            "title": "Check out the best food from all over India",
+            "contentLeft": "A castle is a type of fortified structure ",
+            "contentRight": "built during the Middle Ages predominantly by the nobility or royalty and by military orders.",
+            "brHide": "br-hide",
+            "categoryMuted": "Travel",
+            "categoryMutedDate": " / August 21 2017"
+        },
+        {
+            "cardClass": "card big-left-card show-card",
+            "cardId": "",
+            "id": 2,
+            "img": "https://i.pinimg.com/originals/5a/f6/41/5af64150a1be47475b70af8586e715ec.jpg",
+            "imgClass": "img-fluid rounded-start pimg",
+            "cardBodyClass": "card-body pcardb",
+            "title": "Check out the best food from all over India",
+            "contentLeft": "A castle is a type of fortified structure ",
+            "contentRight": "built during the Middle Ages predominantly by the nobility or royalty and by military orders.",
+            "brHide": "br-hide",
+            "categoryMuted": "Travel",
+            "categoryMutedDate": " / August 21 2017"
+        },
+        {
+            "cardClass": "card big-left-card show-card",
+            "cardId": "border-remove",
+            "id": 3,
+            "img": "https://i.pinimg.com/originals/5a/f6/41/5af64150a1be47475b70af8586e715ec.jpg",
+            "imgClass": "img-fluid rounded-start pimg",
+            "cardBodyClass": "card-body pcardb",
+            "title": "Check out the best food from all over India",
+            "contentLeft": "A castle is a type of fortified structure ",
+            "contentRight": "built during the Middle Ages predominantly by the nobility or royalty and by military orders.",
+            "brHide": "br-hide",
+            "categoryMuted": "Travel",
+            "categoryMutedDate": " / August 21 2017"
+        },
+        {
+            "cardClass": "card big-left-card rem-card",
+            "cardId": "",
+            "id": 4,
+            "img": "https://i.pinimg.com/originals/5a/f6/41/5af64150a1be47475b70af8586e715ec.jpg",
+            "imgClass": "img-fluid rounded-start",
+            "cardBodyClass": "card-body",
+            "title": "Check out the best food from all over India",
+            "contentLeft": "A castle is a type of fortified structure ",
+            "contentRight": "built during the Middle Ages predominantly by the nobility or royalty and by military orders.",
+            "brHide": "",
+            "categoryMuted": "Travel",
+            "categoryMutedDate": " / August 21 2017"
+        },
+        {
+            "cardClass": "card big-left-card rem-card",
+            "cardId": "",
+            "id": 5,
+            "img": "https://i.pinimg.com/originals/5a/f6/41/5af64150a1be47475b70af8586e715ec.jpg",
+            "imgClass": "img-fluid rounded-start",
+            "cardBodyClass": "card-body",
+            "title": "Check out the best food from all over India",
+            "contentLeft": "A castle is a type of fortified structure ",
+            "contentRight": "built during the Middle Ages predominantly by the nobility or royalty and by military orders.",
+            "brHide": "",
+            "categoryMuted": "Travel",
+            "categoryMutedDate": " / August 21 2017"
+        },
+        {
+            "cardClass": "card big-left-card rem-card",
+            "cardId": "",
+            "id": 6,
+            "img": "https://i.pinimg.com/originals/5a/f6/41/5af64150a1be47475b70af8586e715ec.jpg",
+            "imgClass": "img-fluid rounded-start",
+            "cardBodyClass": "card-body",
+            "title": "Check out the best food from all over India",
+            "contentLeft": "A castle is a type of fortified structure ",
+            "contentRight": "built during the Middle Ages predominantly by the nobility or royalty and by military orders.",
+            "brHide": "",
+            "categoryMuted": "Travel",
+            "categoryMutedDate": " / August 21 2017"
+        },
+        {
+            "cardClass": "card big-left-card rem-card",
+            "cardId": "last-left-card",
+            "id": 7,
+            "img": "https://i.pinimg.com/originals/5a/f6/41/5af64150a1be47475b70af8586e715ec.jpg",
+            "imgClass": "img-fluid rounded-start",
+            "cardBodyClass": "card-body",
+            "title": "Check out the best food from all over India",
+            "contentLeft": "A castle is a type of fortified structure ",
+            "contentRight": "built during the Middle Ages predominantly by the nobility or royalty and by military orders.",
+            "brHide": "",
+            "categoryMuted": "Travel",
+            "categoryMutedDate": " / August 21 2017"
+        }
+    ],
+    "foodSmall": [
+        {
+            "cardClass": "card mb-5 small-right-card post-show-card",
+            "id": 2,
+            "imgDivClass": "col-md-6 tpct",
+            "img": "https://i.pinimg.com/originals/5a/f6/41/5af64150a1be47475b70af8586e715ec.jpg",
+            "imgClass": "img-fluid rounded-start tpkci",
+            "cardBodyClass": "card-body pcardb",
+            "cardTitleClass": "card-title tpkct",
+            "title": "Check out the best food from all over India",
+            "cardTextMutedClass": "text-muted tpkcp",
+            "categoryMuted": "Travel",
+            "categoryMutedDate": " / August 21 2017"
+        },
+        {
+            "cardClass": "card mb-5 small-right-card post-show-card",
+            "id": 3,
+            "imgDivClass": "col-md-6 tpct",
+            "img": "https://i.pinimg.com/originals/5a/f6/41/5af64150a1be47475b70af8586e715ec.jpg",
+            "imgClass": "img-fluid rounded-start tpkci",
+            "cardBodyClass": "card-body pcardb",
+            "cardTitleClass": "card-title tpkct",
+            "title": "Check out the best food from all over India",
+            "cardTextMutedClass": "text-muted tpkcp",
+            "categoryMuted": "Travel",
+            "categoryMutedDate": " / August 21 2017"
+        },
+        {
+            "cardClass": "card mb-5 small-right-card post-show-card",
+            "id": 4,
+            "imgDivClass": "col-md-6 tpct",
+            "img": "https://i.pinimg.com/originals/5a/f6/41/5af64150a1be47475b70af8586e715ec.jpg",
+            "imgClass": "img-fluid rounded-start tpkci",
+            "cardBodyClass": "card-body pcardb",
+            "cardTitleClass": "card-title tpkct",
+            "title": "Check out the best food from all over India",
+            "cardTextMutedClass": "text-muted tpkcp",
+            "categoryMuted": "Travel",
+            "categoryMutedDate": " / August 21 2017"
+        },
+        {
+            "cardClass": "card mb-5 small-right-card rem-card",
+            "id": 5,
+            "imgDivClass": "col-md-6",
+            "img": "https://i.pinimg.com/originals/5a/f6/41/5af64150a1be47475b70af8586e715ec.jpg",
+            "imgClass": "img-fluid rounded-start",
+            "cardBodyClass": "card-body",
+            "cardTitleClass": "card-title",
+            "title": "Check out the best food from all over India",
+            "cardTextMutedClass": "text-muted",
+            "categoryMuted": "Travel",
+            "categoryMutedDate": " / August 21 2017"
+        }
+    ],
+    "foodUpBig": [
+        {
+            "id": 1,
+            "img": "https://www.quickanddirtytips.com/sites/default/files/images/22646/traditional%20indian%20cuisine.png",
+            "title": "Check out the best food from all over India",
+            "categoryMuted": "Travel",
+            "categoryMutedDate": " / August 21 2017"
+        }
+    ] 
+    
+}

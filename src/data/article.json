@@ -1,0 +1,77 @@
+{
+    "leftContainer": [
+        {
+            "imgClaps": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:b8a8258d-7b0b-4042-9818-a758226f5b5c;revision=0?component_id=b775964e-36af-45e3-8569-e37ac86ae479&api_key=CometServer1&access_token=1645205893_urn%3Aaaid%3Asc%3AUS%3Ab8a8258d-7b0b-4042-9818-a758226f5b5c%3Bpublic_98e35318b881747e7b5668ab5aba8f7205ebe1c1",
+            "clapsText": "9.3K claps",
+            "imgShare": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:b8a8258d-7b0b-4042-9818-a758226f5b5c;revision=0?component_id=178e3f84-dd79-4832-8c69-7926133e32ab&api_key=CometServer1&access_token=1645205893_urn%3Aaaid%3Asc%3AUS%3Ab8a8258d-7b0b-4042-9818-a758226f5b5c%3Bpublic_98e35318b881747e7b5668ab5aba8f7205ebe1c1",
+            "shareText": "Share this article"
+        }
+    ],
+    "articles": [
+        {
+            "title": "5 Ways to animate a React app.",
+            "profileImgOne": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:b8a8258d-7b0b-4042-9818-a758226f5b5c;revision=0?component_id=ba95e7ce-c07b-4a38-85ff-bba901479295&api_key=CometServer1&access_token=1645205893_urn%3Aaaid%3Asc%3AUS%3Ab8a8258d-7b0b-4042-9818-a758226f5b5c%3Bpublic_98e35318b881747e7b5668ab5aba8f7205ebe1c1",
+            "profileNameOne": "Dmitry Nozhenko",
+            "profileLineOne": "Jan 28, 2019 - 10 min read",
+            "reactArticleImage": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:b8a8258d-7b0b-4042-9818-a758226f5b5c;revision=0?component_id=0d5847e5-e6f5-4128-a6f0-a6418905ccae&api_key=CometServer1&access_token=1645205893_urn%3Aaaid%3Asc%3AUS%3Ab8a8258d-7b0b-4042-9818-a758226f5b5c%3Bpublic_98e35318b881747e7b5668ab5aba8f7205ebe1c1",
+            "reactArticleText": "Animation in ReactJs app is a popular topic and there are many ways to create different types of animations.Many developers create animation exclusively using css and adding classes to HTML tags. This is a great way and you should use it. If you want to create complex animations you can pay attention to GreenSock. GreenSock is the most powerful animation platform. There are also a lot of libraries, components for creating animation in React.",
+            "reactArticleSmallLine": "Let’s talk about them",
+            "codeShot": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:b8a8258d-7b0b-4042-9818-a758226f5b5c;revision=0?component_id=8f6ecc24-5727-44ea-82da-6bd2ea85ab6a&api_key=CometServer1&access_token=1645205893_urn%3Aaaid%3Asc%3AUS%3Ab8a8258d-7b0b-4042-9818-a758226f5b5c%3Bpublic_98e35318b881747e7b5668ab5aba8f7205ebe1c1",
+            "badge": ["React", "Javascript", "Animation"],
+            "imgClaps": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:b8a8258d-7b0b-4042-9818-a758226f5b5c;revision=0?component_id=b775964e-36af-45e3-8569-e37ac86ae479&api_key=CometServer1&access_token=1645205893_urn%3Aaaid%3Asc%3AUS%3Ab8a8258d-7b0b-4042-9818-a758226f5b5c%3Bpublic_98e35318b881747e7b5668ab5aba8f7205ebe1c1",
+            "clapsText": "9.3K claps"
+        }
+    ],
+    "bottomSection": [
+        {
+            "id": 1,
+            "img": "https://exploretraveler.com/wp-content/uploads/2018/07/Palace-4.jpg",
+            "cardTitle": "Joshua Tree Overnight Adventure",
+            "profileImg": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:b8a8258d-7b0b-4042-9818-a758226f5b5c;revision=0?component_id=5e9582fc-efba-45da-9853-682fd88122a9&api_key=CometServer1&access_token=1645205893_urn%3Aaaid%3Asc%3AUS%3Ab8a8258d-7b0b-4042-9818-a758226f5b5c%3Bpublic_98e35318b881747e7b5668ab5aba8f7205ebe1c1",
+            "profileName": "Dmitry Nozhenko",
+            "profileText": "Aug 10 - 4 min read"
+        },
+        {
+            "id": 2,
+            "img": "https://exploretraveler.com/wp-content/uploads/2018/07/Palace-4.jpg",
+            "cardTitle": "Joshua Tree Overnight Adventure",
+            "profileImg": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:b8a8258d-7b0b-4042-9818-a758226f5b5c;revision=0?component_id=5e9582fc-efba-45da-9853-682fd88122a9&api_key=CometServer1&access_token=1645205893_urn%3Aaaid%3Asc%3AUS%3Ab8a8258d-7b0b-4042-9818-a758226f5b5c%3Bpublic_98e35318b881747e7b5668ab5aba8f7205ebe1c1",
+            "profileName": "Dmitry Nozhenko",
+            "profileText": "Aug 10 - 4 min read"
+        },
+        {
+            "id": 3,
+            "img": "https://exploretraveler.com/wp-content/uploads/2018/07/Palace-4.jpg",
+            "cardTitle": "Joshua Tree Overnight Adventure",
+            "profileImg": "https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:b8a8258d-7b0b-4042-9818-a758226f5b5c;revision=0?component_id=5e9582fc-efba-45da-9853-682fd88122a9&api_key=CometServer1&access_token=1645205893_urn%3Aaaid%3Asc%3AUS%3Ab8a8258d-7b0b-4042-9818-a758226f5b5c%3Bpublic_98e35318b881747e7b5668ab5aba8f7205ebe1c1",
+            "profileName": "Dmitry Nozhenko",
+            "profileText": "Aug 10 - 4 min read"
+        }
+    ],
+    "mobileView": [
+        {
+            "id": 1,
+            "articleTitle": "Performance Comparison for 5 JavaScript Object Iterations",
+            "articleWriter": "Dmitry Nozhenko",
+            "img":"https://exploretraveler.com/wp-content/uploads/2018/07/Palace-4.jpg"
+        },
+        {
+            "id": 2,
+            "articleTitle": "Performance Comparison for 5 JavaScript Object Iterations",
+            "articleWriter": "Dmitry Nozhenko",
+            "img":"https://exploretraveler.com/wp-content/uploads/2018/07/Palace-4.jpg"
+        },
+        {
+            "id": 3,
+            "articleTitle": "Performance Comparison for 5 JavaScript Object Iterations",
+            "articleWriter": "Dmitry Nozhenko",
+            "img":"https://exploretraveler.com/wp-content/uploads/2018/07/Palace-4.jpg"
+        },
+        {
+            "id": 4,
+            "articleTitle": "Performance Comparison for 5 JavaScript Object Iterations",
+            "articleWriter": "Dmitry Nozhenko",
+            "img":"https://exploretraveler.com/wp-content/uploads/2018/07/Palace-4.jpg"
+        }
+    ]
+}

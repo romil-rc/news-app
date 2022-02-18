@@ -2,16 +2,16 @@ import React from 'react'
 import arrowDown from '../assets/arrow.png'
 import '../styles/bthff.css'
 import { Link } from "react-router-dom";
-import BollywoodData from '../data/bollywood.json'
+import TechnologyData from '../data/technology.json'
 
-export default function Bollywood() {
+export default function Technology() {
     return (
         <div className='container'>
             <div className="row prow">
                 <div className="col-8" id="left-section">
-                    <h1 className='text m-3'>Bollywood</h1>
+                    <h1 className='text m-3'>Technology</h1>
                     <hr className='bhr'/>
-                    {BollywoodData.bollywoodBig.map(elements => {
+                    {TechnologyData.technologyBig.map(elements => {
                         return (
                             <div className={elements.cardClass} id={elements.cardId}>
                                 <div className="row">
@@ -41,7 +41,7 @@ export default function Bollywood() {
                     <h2>Top Posts</h2>
                     <hr className='bhr'/>
                     <br />
-                        {BollywoodData.bollywoodUpBig.map(element => {
+                        {TechnologyData.technologyUpBig.map(element => {
                             return (
                                 <>
                                     <img src={element.img} alt="mountains" id='pbi'/>
@@ -58,7 +58,7 @@ export default function Bollywood() {
                             )
                         })}
                         <div className="row">
-                            {BollywoodData.bollywoodSmall.map(elements => {
+                            {TechnologyData.technologySmall.map(elements => {
                                 return (
                                     <div className={elements.cardClass} style={{width: '100%'}}>
                                         <div className="row g-0">

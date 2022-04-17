@@ -1,11 +1,9 @@
 import './App.css';
-import Entertainment from './components/Entertainment';
-import TechFit from './components/TechFit';
-import Food from './components/Food'
 import Home from './components/Home';
+import AllComponents from './components/AllComponents';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Article from './components/Article';
+// import Article from './components/Article';
 
 function App() {
 
@@ -17,12 +15,12 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path='/' element={ <Home q="world" pageSize={12} /> } />
-          <Route exact path='/bollywood' element={ <Entertainment title="Bollywood" country="in" category="entertainment" pageSize={pageSize} /> } />
-          <Route exact path='/technology' element={ <TechFit title="Technology" category="technology" pageSize={pageSize} /> } />
-          <Route exact path='/hollywood' element={ <Entertainment title="Hollywood" country="us" category="entertainment" pageSize={pageSize} /> } />
-          <Route exact path='/health' element={ <TechFit title="Health" category="health" pageSize={pageSize} /> } />
-          <Route exact path='/food' element={ <Food q="chicken" title="Food" category="food" pageSize={pageSize} /> } />
-          <Route exact path='/article/:id' element={< Article />} />
+          <Route exact path='/bollywood' element={ <AllComponents title="Bollywood" country="IN" category="entertainment" pageSize={pageSize} /> } />
+          <Route exact path='/technology' element={ <AllComponents title="Technology" country="" category="technology" pageSize={pageSize} /> } />
+          <Route exact path='/hollywood' element={ <AllComponents title="Hollywood" country="US" category="entertainment" pageSize={pageSize} /> } />
+          <Route exact path='/fitness' element={ <AllComponents title="Fitness" country="" category="fitness" pageSize={pageSize} /> } />
+          <Route exact path='/food' element={ <AllComponents title="Food" country="" category="food" pageSize={pageSize} /> } />
+          {/* <Route exact path='/article/:id' element={< Article />} /> */}
         </Routes>
       </Router>
     </>

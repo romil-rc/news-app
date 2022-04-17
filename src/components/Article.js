@@ -7,7 +7,7 @@ import facebookIcon from '../assets/facebook-square-brands.svg'
 import twitterIcon from '../assets/twitter-square-brands.svg'
 import instaIcon from '../assets/instagram-square-brands.svg'
 import youtubeIcon from '../assets/youtube-square-brands.svg'
-import ArticleData from '../data/article.json'
+// import ArticleData from '../data/article.json'
 import ReactPlayer from 'react-player'
 
 export default function Article() {
@@ -53,7 +53,7 @@ export default function Article() {
             <div className="row">
                 <div className="col-md-3">
                     <div className="left-container">
-                        {ArticleData.leftContainer.map(element => {
+                        {/* {ArticleData.leftContainer.map(element => {
                             return (
                                 <>
                                     <EmojiHappyIcon style={{width: '25px', color:'grey'}} className='left-claps' /> <span className='left-text'>{element.clapsText}</span>
@@ -61,11 +61,11 @@ export default function Article() {
                                     <ShareIcon style={{width: '25px', color:'grey'}} className='left-claps' /> <span className='left-text'>{element.shareText}</span>
                                 </>
                             )
-                        })}
+                        })} */}
                     </div>
                 </div>
                 <div className="col-md-6">
-                    {ArticleData.articles.map(elements => {
+                    {/* {ArticleData.articles.map(elements => {
                         return (
                             <>
                                 <h2 className='font-change' id='article-heading'>{data.name}</h2>
@@ -85,22 +85,22 @@ export default function Article() {
                                     <img src={data.thumbnail_url} alt="react" />
                                     {data.description ? <p className='font-change mt-5' id='bpara'>{data.description}</p> : <p className='font-change mt-5' id='bpara'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit necessitatibus et, alias porro tempore laboriosam atque temporibus magnam eligendi consequuntur, sequi odio nemo nisi ab repellendus officia vero deleniti recusandae.</p>}
                                     <br />
-                                    { data.original_video_url ? <ReactPlayer controls url={data.original_video_url} /> : null }
+                                    { data.original_video_url ? <ReactPlayer controls url={data.original_video_url} /> : null } */}
                                     {/* <img src={elements.codeShot} alt="codeShot" /> */}
-                                    <p className="badge bg-secondary text-truncate" width="50px">{data.yields.slice(0, 50)}</p>
+                                    {/* <p className="badge bg-secondary text-truncate" width="50px">{data.yields.slice(0, 50)}</p>
                                     <p className="badge bg-secondary text-truncate" width="50px">{data.servings_noun_plural}</p>
-                                    <p className="badge bg-secondary text-truncate" width="50px">Serving: {data.num_servings}</p>
+                                    <p className="badge bg-secondary text-truncate" width="50px">Serving: {data.num_servings}</p> */}
                                     
                                     {/* {elements.badge.map(items => {
                                         return (
                                             <span className="badge bg-secondary">{items}</span>
                                         )
                                     })} */}
-                                    <hr />
+                                    {/* <hr />
                                     <div className="d-flex">
                                         <EmojiHappyIcon style={{width: '25px', color:'grey'}} /> 
                                         <p id='clap-text' style={{paddingTop: "15px"}}>9.3K happy reviews</p>
-                                    </div>
+                                    </div> */}
                                     {/* <hr /> */}
                                     {/* <div className="profile" id='ppro'> */}
                                         {/* <img src={elements.profileImgOne} alt="picon" id='pbicon'/> */}
@@ -109,10 +109,10 @@ export default function Article() {
                                         {/* <p id='b-pro-line-t'>WRITTEN BY</p> */}
                                     {/* </div> */}
                                     {/* <hr id='bp'/> */}
-                                </div>
+                                {/* </div>
                             </>
                         )
-                    })}
+                    })} */}
                 </div>
                 <div className="col-md-3">
                     
@@ -125,7 +125,7 @@ export default function Article() {
                 <hr />
             </div>
             <div className="row row-cols-1 row-cols-md-3 g-4">
-                {ArticleData.bottomSection.map(elements => {
+                {/* {ArticleData.bottomSection.map(elements => {
                     return (
                         <div className="col">
                             <div className="card h-90 shadow mb-5 bg-body rounded bsc">
@@ -141,14 +141,14 @@ export default function Article() {
                             </div>
                         </div>
                     )
-                })}
+                })} */}
             </div>
         </div>
         <div className="container scards" id='main-hidden' >
             <div className="container second">
                 <p id='ptb'>More From The Siren</p>
             </div>
-            {ArticleData.mobileView.map(elements => {
+            {/* {ArticleData.mobileView.map(elements => {
                 return (
                     <div className="container small-card">
                         <div className="pstdiv">
@@ -160,7 +160,7 @@ export default function Article() {
                         </div>
                     </div>
                 )
-            })}
+            })} */}
         </div>
        </>
     )

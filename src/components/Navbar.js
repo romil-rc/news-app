@@ -8,7 +8,6 @@ export default function Navbar() {
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     </style>
-        {/* <h1 className='text-center mt-4 mb-3'><span className='fs-4'><div className='rotated'>The</div></span><span className='fw-bolder'>Siren</span></h1> */}
         
         <span>
         <div className="text-center mt-4 mb-3" id='pl'>
@@ -26,7 +25,7 @@ export default function Navbar() {
                     <li className="nav-item"><Link className="nav-link fw-bold text-dark" to="/bollywood">Bollywood</Link></li>
                     <li className="nav-item"><Link className="nav-link fw-bold text-dark" to="/technology">Technology</Link></li>
                     <li className="nav-item"><Link className="nav-link fw-bold text-dark" to="/hollywood">Hollywood</Link></li>
-                    <li className="nav-item"><Link className="nav-link fw-bold text-dark" to="/health">Health</Link></li>
+                    <li className="nav-item"><Link className="nav-link fw-bold text-dark" to="/fitness">Fitness</Link></li>
                     <li className="nav-item"><Link className="nav-link fw-bold text-dark" to="/food">Food</Link></li>
                 </ul>
                 </div>

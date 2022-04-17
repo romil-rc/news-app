@@ -4,41 +4,32 @@ import '../styles/bthff.css'
 import axios from 'axios';
 import { TailSpin } from  'react-loader-spinner'
 
-export default function Bollywood({ title, country, category, pageSize }) {
-
+const AllComponents = ({ title, country, category, pageSize }) => {
     const [articles, setArticles] = useState([]);
     const [visible, setVisible] = useState(pageSize);
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        // const fetchData = async() => {
-        //     setLoading(true);
-        //     const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=9d59c1a70aa84558a50aa031bdeb94e9`);
-        //     setArticles(response.data.articles);
-        //     setLoading(false);
-        // }
-        // fetchData();
-
+        
         var options = {
             method: 'GET',
             url: 'https://api.newscatcherapi.com/v2/search',
-            params: {q: 'Bollywood', lang: 'en', countries: "IN", sort_by: 'relevancy', page: '1'},
+            params: {q: title, lang: 'en', countries: country, sort_by: 'relevancy', page: '1'},
             headers: {
-              'x-api-key': 'ftdhXNVdbICzaKmkkAm5rhMrHn-Fat2fOv4WuUzzsy0'
+              'x-api-key': 'UMfE-lNRCc4CUqW4YIUVyifGsv-DTDqSI26eFzaatWk'
             }
-          };
-          
-          setLoading(true);
-          axios.request(options).then(function (response) {
-                setArticles(response.data.articles);
-                // console.log(response.data.articles);
-            }).catch(function (error) {
-                console.error(error);
-            });
+        };        
+        
+        axios.request(options).then(function (response) {
+            setLoading(true);
+            setArticles(response.data.articles);
             setLoading(false);
+        }).catch(function (error) {
+            console.error(error);
+        });
 
 
-    }, [])
+    }, [country, title]);
     // console.log(articles);
     const loadMore = () => {
         setVisible(visible + 5);
@@ -64,7 +55,7 @@ export default function Bollywood({ title, country, category, pageSize }) {
                     <hr className='bhr'/>
                     {articles.slice(0, visible).map((article, i) => {
                         return (
-                            <div className='container'>
+                            <div className='container' key={i}>
                                 <div className='row'>
                                     <div className='col-md-6'>
                                         { article.media ? <img src={article.media} style={{height: "232px", width: "316px", borderRadius: "0px"}} alt="" /> : <img src="https://askleo.askleomedia.com/wp-content/uploads/2004/06/no_image-300x245.jpg" style={{height: "232px", width: "316px", borderRadius: "0px"}} alt="" />}
@@ -99,7 +90,7 @@ export default function Bollywood({ title, country, category, pageSize }) {
                     <br />
                     {articles.slice(-1).map((element, i) => {
                             return (
-                                <>
+                                <div key={i}>
                                     <img src={element.media} alt="mountains" id='pbi'/>
                                     <div className="row mt-4 mb-3">
                                         <div className="col-md-7">
@@ -110,13 +101,13 @@ export default function Bollywood({ title, country, category, pageSize }) {
                                             <h2 id='post-number'><b>{i+1}</b></h2>
                                         </div>
                                     </div>
-                                </>
+                                </div>
                             )
                         })}
                         <div className="row">
                             {articles.slice(16, 20).map((elements, i) => {
                                 return (
-                                    <div className="card mb-5 small-right-card post-show-card" style={{width: '100%'}}>
+                                    <div className="card mb-5 small-right-card post-show-card" style={{width: '100%'}} key={i}>
                                         <div className="row g-0">
                                             <div className="col-md-6 tpct">
                                                 <img src={elements.media} className="img-fluid rounded-start tpkci" style={{borderRadius: "0px"}} alt="castle"/>
@@ -124,7 +115,6 @@ export default function Bollywood({ title, country, category, pageSize }) {
                                             <div className="col-md-5">
                                                 <div className="card-body pcardb">
                                                     <h5 className="card-title tpkct fs-6"><a href={elements.link} className='mtlb' style={{width: "150px"}}>{elements.title.slice(0, 30)}</a></h5><br /><br />
-                                                    {/* <p className="card-text really-small"><small className={elements.cardTextMutedClass}><b>{elements.categoryMuted}</b>{elements.categoryMutedDate}</small></p> */}
                                                     <p className='card-text really-small text-capitalize'><span className='fw-bold'>{category}</span> / {new Date(elements.published_date).toLocaleString('default', { month: 'long' })} {new Date(elements.published_date).getDate()} {new Date(elements.published_date).getFullYear()} </p>
                                                 </div>
                                             </div>
@@ -146,3 +136,6 @@ export default function Bollywood({ title, country, category, pageSize }) {
         </div>
     )
 }
+
+
+export default AllComponents;

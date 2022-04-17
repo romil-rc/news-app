@@ -12,7 +12,7 @@ export default function Navbar() {
         
         <span>
         <div className="text-center mt-4 mb-3" id='pl'>
-            <p className='fw-bolder fs-1 nav-heading'><span className='rotated fs-6'>The</span> Siren</p>
+            <p className='fw-bolder fs-1 nav-heading'><Link to='/' style={{textDecoration: "none", color: "black"}}><span className='rotated fs-6'>The</span> Siren</Link></p>
         </div></span><span>
         <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container-fluid">
@@ -26,7 +26,7 @@ export default function Navbar() {
                     <li className="nav-item"><Link className="nav-link fw-bold text-dark" to="/bollywood">Bollywood</Link></li>
                     <li className="nav-item"><Link className="nav-link fw-bold text-dark" to="/technology">Technology</Link></li>
                     <li className="nav-item"><Link className="nav-link fw-bold text-dark" to="/hollywood">Hollywood</Link></li>
-                    <li className="nav-item"><Link className="nav-link fw-bold text-dark" to="/fitness">Fitness</Link></li>
+                    <li className="nav-item"><Link className="nav-link fw-bold text-dark" to="/health">Health</Link></li>
                     <li className="nav-item"><Link className="nav-link fw-bold text-dark" to="/food">Food</Link></li>
                 </ul>
                 </div>

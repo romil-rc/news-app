@@ -1,19 +1,15 @@
 {
   "files": {
-    "main.css": "/blog-app/static/css/main.108c0888.css",
-    "main.js": "/blog-app/static/js/main.0fd88880.js",
+    "main.css": "/blog-app/static/css/main.7920e159.css",
+    "main.js": "/blog-app/static/js/main.6d2f75d4.js",
     "static/js/787.18abc0b7.chunk.js": "/blog-app/static/js/787.18abc0b7.chunk.js",
     "index.html": "/blog-app/index.html",
-    "static/media/instagram-square-brands.svg": "/blog-app/static/media/instagram-square-brands.4d3c7bf8b032c0335c378a8d19fb31f3.svg",
-    "static/media/twitter-square-brands.svg": "/blog-app/static/media/twitter-square-brands.763ddc74d87be7aa12a1876ea75753d4.svg",
-    "static/media/youtube-square-brands.svg": "/blog-app/static/media/youtube-square-brands.9bbaaf2cce896c0191f7be8fb9635cb4.svg",
-    "static/media/facebook-square-brands.svg": "/blog-app/static/media/facebook-square-brands.4572f3143062ec3dfd7aea11e6bcf578.svg",
-    "main.108c0888.css.map": "/blog-app/static/css/main.108c0888.css.map",
-    "main.0fd88880.js.map": "/blog-app/static/js/main.0fd88880.js.map",
+    "main.7920e159.css.map": "/blog-app/static/css/main.7920e159.css.map",
+    "main.6d2f75d4.js.map": "/blog-app/static/js/main.6d2f75d4.js.map",
     "787.18abc0b7.chunk.js.map": "/blog-app/static/js/787.18abc0b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.108c0888.css",
-    "static/js/main.0fd88880.js"
+    "static/css/main.7920e159.css",
+    "static/js/main.6d2f75d4.js"
   ]
 }

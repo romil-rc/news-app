@@ -4,11 +4,11 @@ import '../styles/bthff.css'
 import axios from 'axios';
 import { TailSpin } from  'react-loader-spinner'
 
-const AllComponents = ({ title, country, category, pageSize }) => {
+const AllComponents = ({ title, country, category, pageSize, apiKey }) => {
     const [articles, setArticles] = useState([]);
     const [visible, setVisible] = useState(pageSize);
     const [loading, setLoading] = useState(false);
-
+    
     useEffect(() => {
         
         var options = {
@@ -16,7 +16,7 @@ const AllComponents = ({ title, country, category, pageSize }) => {
             url: 'https://api.newscatcherapi.com/v2/search',
             params: {q: title, lang: 'en', countries: country, sort_by: 'relevancy', page: '1'},
             headers: {
-              'x-api-key': 'UMfE-lNRCc4CUqW4YIUVyifGsv-DTDqSI26eFzaatWk'
+              'x-api-key': apiKey
             }
         };        
         
@@ -29,8 +29,8 @@ const AllComponents = ({ title, country, category, pageSize }) => {
         });
 
 
-    }, [country, title]);
-    // console.log(articles);
+    }, [country, title, apiKey]);
+    
     const loadMore = () => {
         setVisible(visible + 5);
     }
@@ -62,7 +62,7 @@ const AllComponents = ({ title, country, category, pageSize }) => {
                                     </div>
                                     <div className='col-md-6'>
                                         <div>
-                                            <h5 className='text-truncate fw-bold'><a href={article.link} className="mtlb">{article.title}</a></h5>
+                                            <h5 className='text-truncate fw-bold'><a target="_blank" rel="noreferrer" href={article.link} className="mtlb">{article.title}</a></h5>
                                             { article.excerpt ? <p>{article.excerpt}</p> : <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident obcaecati quis vero veritatis unde consequatur, tenetur excepturi soluta totam maxime quasi necessitatibus quo sunt eligendi id eaque repellat fugiat nulla!</p>}
                                         </div>
                                         <div className=''>
@@ -94,7 +94,7 @@ const AllComponents = ({ title, country, category, pageSize }) => {
                                     <img src={element.media} alt="mountains" id='pbi'/>
                                     <div className="row mt-4 mb-3">
                                         <div className="col-md-7">
-                                            <h5 id='ptpit'><a href={element.link} className='mtlb'>{element.title.slice(0, 30)}</a></h5><br />
+                                            <h5 id='ptpit'><a  target="_blank" rel="noreferrer" href={element.link} className='mtlb'>{element.title.slice(0, 30)}</a></h5><br />
                                             <p className='text-muted text-capitalize'><span className='fw-bold'>{category}</span> / {new Date(element.published_date).toLocaleString('default', { month: 'long' })} {new Date(element.published_date).getDate()} {new Date(element.published_date).getFullYear()} </p>
                                         </div>
                                         <div className="col-md-5">
@@ -114,7 +114,7 @@ const AllComponents = ({ title, country, category, pageSize }) => {
                                             </div>
                                             <div className="col-md-5">
                                                 <div className="card-body pcardb">
-                                                    <h5 className="card-title tpkct fs-6"><a href={elements.link} className='mtlb' style={{width: "150px"}}>{elements.title.slice(0, 30)}</a></h5><br /><br />
+                                                    <h5 className="card-title tpkct fs-6"><a  target="_blank" rel="noreferrer" href={elements.link} className='mtlb' style={{width: "150px"}}>{elements.title.slice(0, 30)}</a></h5><br /><br />
                                                     <p className='card-text really-small text-capitalize'><span className='fw-bold'>{category}</span> / {new Date(elements.published_date).toLocaleString('default', { month: 'long' })} {new Date(elements.published_date).getDate()} {new Date(elements.published_date).getFullYear()} </p>
                                                 </div>
                                             </div>

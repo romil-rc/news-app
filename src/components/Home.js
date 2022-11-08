@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import axios from 'axios';
 import { TailSpin } from  'react-loader-spinner'
 
-export default function Home({ q }) {
+export default function Home({ q, apiKey }) {
     
     const [articles, setArticles] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -18,7 +18,7 @@ export default function Home({ q }) {
             url: 'https://api.newscatcherapi.com/v2/search',
             params: {q: q, lang: 'en', sort_by: 'relevancy', page: '1'},
             headers: {
-              'x-api-key': 'UMfE-lNRCc4CUqW4YIUVyifGsv-DTDqSI26eFzaatWk'
+              'x-api-key': apiKey
             }
         };        
         
@@ -30,9 +30,7 @@ export default function Home({ q }) {
             console.error(error);
         });
 
-    }, [q]);
-
-    // console.log(articles);
+    }, [q, apiKey]);
     
     return (
         <div className="container">
@@ -60,7 +58,7 @@ export default function Home({ q }) {
                         <div className="col-8" id='top-big' key={i}>
                             <img src={element.media} style={{height: "460px"}} alt="boreal" id='boreal' />
                             <div className="center big">
-                                <h2><a href={element.link} className="mtlb" style={{color: "white"}}>{element.title.slice(0, 33)}</a></h2>
+                                <h2><a target="_blank" rel="noreferrer" href={element.link} className="mtlb" style={{color: "white"}}>{element.title.slice(0, 33)}</a></h2>
                                 <p>{element.excerpt.slice(0, 70)}</p>
                             </div>
                         </div>
@@ -72,7 +70,7 @@ export default function Home({ q }) {
                             <div className="col pb-3" key={i}>
                                 <img src={elements.media} style={{height: "220px"}} alt="" />
                                 <div className="center small">
-                                    <h2><a href={elements.link} className="mtlb" style={{color: "white"}}>{elements.title.slice(0, 25)}</a></h2>
+                                    <h2><a  target="_blank" rel="noreferrer" href={elements.link} className="mtlb" style={{color: "white"}}>{elements.title.slice(0, 25)}</a></h2>
                                     <p>{elements.excerpt.slice(0, 40)}</p>
                                 </div>
                             </div>
@@ -93,7 +91,7 @@ export default function Home({ q }) {
                                 <div className="card h-90 shadow mb-5 bg-body rounded">
                                     <img src={elements.media} className="card-img-top" style={{height: "200px"}} alt="..." />
                                     <div className="card-body">
-                                        <h5 className="card-title"><a href={elements.link} className="mtlb">{elements.title.slice(0, 50)}</a></h5>
+                                        <h5 className="card-title"><a  target="_blank" rel="noreferrer" href={elements.link} className="mtlb">{elements.title.slice(0, 50)}</a></h5>
                                         <p className="card-text pb-0">{elements.excerpt.slice(0, 70)}</p>
                                         <p className='card-text text-capitalize'>{new Date(elements.published_date).toLocaleString('default', { month: 'long' })} {new Date(elements.published_date).getDate()} {new Date(elements.published_date).getFullYear()} </p>
                                     </div>
@@ -121,7 +119,7 @@ export default function Home({ q }) {
                                     </div>
                                     <div className="col-md-6" style={{paddingLeft: "10px"}}>
                                         <div className="card-body phlacb">
-                                            <h5 className="card-title"><a href={elements.link} className='mtlb'>{elements.title.slice(0, 50)}</a></h5>
+                                            <h5 className="card-title"><a  target="_blank" rel="noreferrer" href={elements.link} className='mtlb'>{elements.title.slice(0, 50)}</a></h5>
                                             <p>{elements.excerpt}</p>
                                             <p className='card-text text-capitalize'>{ elements.topic ? <span className='fw-bold'>{elements.topic}</span> : <span className='fw-bold'>Lorem Ipsum</span> } / {new Date(elements.published_date).toLocaleString('default', { month: 'long' })} {new Date(elements.published_date).getDate()} {new Date(elements.published_date).getFullYear()} </p>
                                         </div>
@@ -187,7 +185,7 @@ export default function Home({ q }) {
                                             </div>
                                             <div className="col-md-5">
                                                 <div className="card-body phtpcb">
-                                                    <h5 className="card-title phtpmh"><a href={elements.link} className='mtlb'>{elements.title.slice(0, 30)}</a></h5><br /><br />
+                                                    <h5 className="card-title phtpmh"><a  target="_blank" rel="noreferrer" href={elements.link} className='mtlb'>{elements.title.slice(0, 30)}</a></h5><br /><br />
                                                     <p className='card-text really-small text-capitalize'>{ elements.topic ? <span className='fw-bold'>{elements.topic}</span> : <span className='fw-bold'>Lorem Ipsum</span> } / {new Date(elements.published_date).toLocaleString('default', { month: 'long' })} {new Date(elements.published_date).getDate()} {new Date(elements.published_date).getFullYear()} </p>
                                                 </div>
                                             </div>
@@ -216,7 +214,7 @@ export default function Home({ q }) {
                         return (
                             <div className="card" key={i}>
                                 <div className="card-body" id="middle-card">
-                                <h5 className="card-title fw-bolder"><a href={elements.link} className='mtlb'>{elements.title}</a></h5><br />
+                                <h5 className="card-title fw-bolder"><a  target="_blank" rel="noreferrer" href={elements.link} className='mtlb'>{elements.title}</a></h5><br />
                                 <p className="card-text">{elements.excerpt.slice(0, 200)}</p><br />
                                 <p className='card-text'>{ elements.topic ? <span className='fw-bold'>{elements.topic}</span> : <span className='fw-bold'>Lorem Ipsum</span> } / {new Date(elements.published_date).toLocaleString('default', { month: 'long' })} {new Date(elements.published_date).getDate()} {new Date(elements.published_date).getFullYear()} </p>
                                 </div>

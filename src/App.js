@@ -16,12 +16,12 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path='/' element={ <Home q="world" apiKey={apiKey} pageSize={12} /> } />
-          <Route exact path='/bollywood' element={ <AllComponents title="Bollywood" apiKey={apiKey} country="IN" category="entertainment" pageSize={pageSize} /> } />
-          <Route exact path='/technology' element={ <AllComponents title="Technology" apiKey={apiKey} country="" category="technology" pageSize={pageSize} /> } />
-          <Route exact path='/hollywood' element={ <AllComponents title="Hollywood" apiKey={apiKey} country="US" category="entertainment" pageSize={pageSize} /> } />
-          <Route exact path='/fitness' element={ <AllComponents title="Fitness" apiKey={apiKey} country="" category="fitness" pageSize={pageSize} /> } />
-          <Route exact path='/food' element={ <AllComponents title="Food" apiKey={apiKey} country="" category="food" pageSize={pageSize} /> } />
+          <Route exact path='/' element={ <Home title="world" apiKey={apiKey} pageSize={12} /> } />
+          <Route exact path='/bollywood' element={ <AllComponents title="Bollywood" apiKey={apiKey} category="entertainment" pageSize={pageSize} /> } />
+          <Route exact path='/technology' element={ <AllComponents title="Technology" apiKey={apiKey} category="technology" pageSize={pageSize} /> } />
+          <Route exact path='/hollywood' element={ <AllComponents title="Hollywood" apiKey={apiKey} category="entertainment" pageSize={pageSize} /> } />
+          <Route exact path='/fitness' element={ <AllComponents title="Fitness" apiKey={apiKey} category="fitness" pageSize={pageSize} /> } />
+          <Route exact path='/food' element={ <AllComponents title="Food" apiKey={apiKey} category="food" pageSize={pageSize} /> } />
           {/* <Route exact path='/article/:id' element={< Article />} /> */}
         </Routes>
       </Router>

@@ -1,27 +1,30 @@
 import React, { useEffect, useState } from 'react'
 import arrowDown from '../assets/arrow.png'
 import '../styles/bthff.css'
-import axios from 'axios';
+// import axios from 'axios';
 import { TailSpin } from 'react-loader-spinner'
 
-const AllComponents = ({ title, category, pageSize, apiKey }) => {
-    const [articles, setArticles] = useState([]);
+const AllComponents = ({ title, category, pageSize, apiKey, data }) => {
+
+    // const [articles, setArticles] = useState([]);
     const [visible, setVisible] = useState(pageSize);
     const [loading, setLoading] = useState(false);
+    
+    const articles = data.articles;
 
-    useEffect(() => {     
+    // useEffect(() => {     
 
-        axios.get(`https://newsapi.org/v2/everything?q=${title}&apiKey=${apiKey}`)
-            .then(function (response) {
-                setLoading(true);
-                setArticles(response.data.articles);
-                setLoading(false);
-            }).catch(function (error) {
-                console.error(error);
-            });
+    //     axios.get(`https://newsapi.org/v2/everything?q=${title}&apiKey=${apiKey}`)
+    //         .then(function (response) {
+    //             setLoading(true);
+    //             setArticles(response.data.articles);
+    //             setLoading(false);
+    //         }).catch(function (error) {
+    //             console.error(error);
+    //         });
 
         // eslint-disable-next-line
-    }, [title]);
+    // }, [title]);
 
     const loadMore = () => {
         setVisible(visible + 5);

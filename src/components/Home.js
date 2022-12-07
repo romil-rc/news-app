@@ -2,28 +2,28 @@ import React, { useState, useEffect } from 'react'
 import '../styles/home.css'
 import arrowDown from '../assets/arrow.png'
 import arrowRight from '../assets/arrow-right.png'
-import axios from 'axios';
+// import axios from 'axios';
 import { TailSpin } from 'react-loader-spinner'
 
-export default function Home({ title, apiKey, pageSize }) {
+export default function Home({ title, apiKey, pageSize, data }) {
 
     const [visible, setVisible] = useState(pageSize);
-    const [articles, setArticles] = useState([]);
+    const [articles, setArticles] = useState(data.articles);
     const [loading, setLoading] = useState(false);
 
-    useEffect(() => {   
+    // useEffect(() => {   
 
-        axios.get(`https://newsapi.org/v2/everything?q=${title}&apiKey=${apiKey}`)
-            .then(function (response) {
-                setLoading(true);
-                setArticles(response.data.articles);
-                console.log(articles);
-                setLoading(false);
-            }).catch(function (error) {
-                console.error(error);
-            });
+        // axios.get(`https://newsapi.org/v2/everything?q=${title}&apiKey=${apiKey}`)
+        //     .then(function (response) {
+        //         setLoading(true);
+        //         setArticles(response.data.articles);
+        //         console.log(articles);
+        //         setLoading(false);
+        //     }).catch(function (error) {
+        //         console.error(error);
+            // });
         // eslint-disable-next-line
-    }, [title]);
+    // }, [title]);
 
     const loadMore = () => {
         setVisible(visible + 5);
